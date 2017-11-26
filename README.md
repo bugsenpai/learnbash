@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+# Navigate commandline
+### Command Editing Shortcuts
 
-You can use the [editor on GitHub](https://github.com/bugsenpai/learnbash.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+    Ctrl + a – go to the start of the command line
+    Ctrl + e – go to the end of the command line
+    Ctrl + k – delete from cursor to the end of the command line
+    Ctrl + u – delete from cursor to the start of the command line
+    Ctrl + w – delete from cursor to start of word (i.e. delete backwards one word)
+    Ctrl + y – paste word or text that was cut using one of the deletion shortcuts (such as the one above) after the cursor
+    Ctrl + xx – move between start of command line and current cursor position (and back again)
+    Alt + b – move backward one word (or go to start of word the cursor is currently on)
+    Alt + f – move forward one word (or go to end of word the cursor is currently on)
+    Alt + d – delete to end of word starting at cursor (whole word if cursor is at the beginning of word)
+    Alt + c – capitalize to end of word starting at cursor (whole word if cursor is at the beginning of word)
+    Alt + u – make uppercase from cursor to end of word
+    Alt + l – make lowercase from cursor to end of word
+    Alt + t – swap current word with previous
+    Ctrl + f – move forward one character
+    Ctrl + b – move backward one character
+    Ctrl + d – delete character under the cursor
+    Ctrl + h – delete character before the cursor
+    Ctrl + t – swap character under cursor with the previous one
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Command Recall Shortcuts
 
-### Markdown
+    Ctrl + r – search the history backwards
+    Ctrl + g – escape from history searching mode
+    Ctrl + p – previous command in history (i.e. walk back through the command history)
+    Ctrl + n – next command in history (i.e. walk forward through the command history)
+    Alt + . – use the last word of the previous command
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Command Control Shortcuts
 
-```markdown
-Syntax highlighted code block
+    Ctrl + l – clear the screen
+    Ctrl + s – stops the output to the screen (for long running verbose command)
+    Ctrl + q – allow output to the screen (if previously stopped using command above)
+    Ctrl + c – terminate the command
+    Ctrl + z – suspend/stop the command
 
-# Header 1
-## Header 2
-### Header 3
+Bash Bang (!) Commands
 
-- Bulleted
-- List
+Bash also has some handy features that use the ! (bang) to allow you to do some funky stuff with bash commands.
 
-1. Numbered
-2. List
+    !! – run last command
+    !blah – run the most recent command that starts with ‘blah’ (e.g. !ls)
+    !blah:p – print out the command that !blah would run (also adds it as the latest command in the command history)
+    !$ – the last word of the previous command (same as Alt + .)
+    !$:p – print out the word that !$ would substitute
+    !* – the previous command except for the last word (e.g. if you type ‘find some_file.txt /‘, then !* would give you ‘find some_file.txt‘)
+    !*:p – print out what !* would substitute
 
-**Bold** and _Italic_ and `Code` text
+There is one more handy thing you can do. This involves using the ^^ ‘command’. If you type a command and run it, you can re-run the same command but substitute a piece of text for another piece of text using ^^ e.g.:
 
-[Link](url) and ![Image](src)
-```
+```$ ls -al```
+```total 12
+drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:38 .
+drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:34 ..
+-rwxr-xr-x  1 Administrator None 1150 Jul 21 23:34 .bash_profile
+-rwxr-xr-x  1 Administrator None 3116 Jul 21 23:34 .bashrc
+drwxr-xr-x+ 4 Administrator None    0 Jul 21 23:39 .gem
+-rwxr-xr-x  1 Administrator None 1461 Jul 21 23:34 .inputrc```
+```$ ^-al^-lash```
+```ls -lash```
+   ```total 12K
+   0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:38 .
+   0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:34 ..
+   4.0K -rwxr-xr-x  1 Administrator None 1.2K Jul 21 23:34 .bash_profile
+   4.0K -rwxr-xr-x  1 Administrator None 3.1K Jul 21 23:34 .bashrc
+   0 drwxr-xr-x+ 4 Administrator None    0 Jul 21 23:39 .gem
+   4.0K -rwxr-xr-x  1 Administrator None 1.5K Jul 21 23:34 .inputrc```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bugsenpai/learnbash.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Here, the command was the ^-al^-lash which replaced the –al with –lash in our previous ls command and re-ran the command again.
