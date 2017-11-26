@@ -52,7 +52,7 @@ Bash also has some handy features that use the ! (bang) to allow you to do some 
 There is one more handy thing you can do. This involves using the ^^ ‘command’. If you type a command and run it, you can re-run the same command but substitute a piece of text for another piece of text using ^^ e.g.:
 
 ```$ ls -al```
-* total 12
+  total 12
 * drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:38 .
 * drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:34 ..
 * -rwxr-xr-x  1 Administrator None 1150 Jul 21 23:34 .bash_profile
@@ -61,13 +61,13 @@ There is one more handy thing you can do. This involves using the ^^ ‘command�
 * -rwxr-xr-x  1 Administrator None 1461 Jul 21 23:34 .inputrc
 ```$ ^-al^-lash```
 ```ls -lash```
-* total 12K
+```total 12K
 0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:38 .
 0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:34 ..
 4.0K -rwxr-xr-x  1 Administrator None 1.2K Jul 21 23:34 .bash_profile
 4.0K -rwxr-xr-x  1 Administrator None 3.1K Jul 21 23:34 .bashrc
 0 drwxr-xr-x+ 4 Administrator None    0 Jul 21 23:39 .gem
 4.0K -rwxr-xr-x  1 Administrator None 1.5K Jul 21 23:34 .inputrc
-
+```
 
 Here, the command was the ^-al^-lash which replaced the –al with –lash in our previous ls command and re-ran the command again.
