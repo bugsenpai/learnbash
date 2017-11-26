@@ -63,7 +63,8 @@ drwxr-xr-x+ 4 Administrator None    0 Jul 21 23:39 .gem
 
 ```$ ^-al^-lash```  
 ```ls -lash```
-```total 12K  
+```
+total 12K  
 0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:38 .  
 0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:34 ..  
 4.0K -rwxr-xr-x  1 Administrator None 1.2K Jul 21 23:34 .bash_profile  
