@@ -58,8 +58,10 @@ drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:34 ..
 -rwxr-xr-x  1 Administrator None 1150 Jul 21 23:34 .bash_profile  
 -rwxr-xr-x  1 Administrator None 3116 Jul 21 23:34 .bashrc  
 drwxr-xr-x+ 4 Administrator None    0 Jul 21 23:39 .gem  
--rwxr-xr-x  1 Administrator None 1461 Jul 21 23:34 .inputrc  ```
-```$ ^-al^-lash```
+-rwxr-xr-x  1 Administrator None 1461 Jul 21 23:34 .inputrc
+```
+
+```$ ^-al^-lash```  
 ```ls -lash```
 ```total 12K  
 0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:38 .  
