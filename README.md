@@ -1,7 +1,7 @@
 # Navigate commandline
 ### Command Editing Shortcuts
 
-    ```Ctrl + a – go to the start of the command line
+    Ctrl + a – go to the start of the command line
     Ctrl + e – go to the end of the command line
     Ctrl + k – delete from cursor to the end of the command line
     Ctrl + u – delete from cursor to the start of the command line
@@ -19,35 +19,35 @@
     Ctrl + b – move backward one character
     Ctrl + d – delete character under the cursor
     Ctrl + h – delete character before the cursor
-    Ctrl + t – swap character under cursor with the previous one```
+    Ctrl + t – swap character under cursor with the previous one
 
 ### Command Recall Shortcuts
 
-    ```Ctrl + r – search the history backwards
+    Ctrl + r – search the history backwards
     Ctrl + g – escape from history searching mode
     Ctrl + p – previous command in history (i.e. walk back through the command history)
     Ctrl + n – next command in history (i.e. walk forward through the command history)
-    Alt + . – use the last word of the previous command```
+    Alt + . – use the last word of the previous command
 
 ### Command Control Shortcuts
 
-    ```Ctrl + l – clear the screen
+    Ctrl + l – clear the screen
     Ctrl + s – stops the output to the screen (for long running verbose command)
     Ctrl + q – allow output to the screen (if previously stopped using command above)
     Ctrl + c – terminate the command
-    Ctrl + z – suspend/stop the command```
+    Ctrl + z – suspend/stop the command
 
 Bash Bang (!) Commands
 
 Bash also has some handy features that use the ! (bang) to allow you to do some funky stuff with bash commands.
 
-    ```!! – run last command
+    !! – run last command
     !blah – run the most recent command that starts with ‘blah’ (e.g. !ls)
     !blah:p – print out the command that !blah would run (also adds it as the latest command in the command history)
     !$ – the last word of the previous command (same as Alt + .)
     !$:p – print out the word that !$ would substitute
     !* – the previous command except for the last word (e.g. if you type ‘find some_file.txt /‘, then !* would give you ‘find some_file.txt‘)
-    !*:p – print out what !* would substitute```
+    !*:p – print out what !* would substitute
 
 There is one more handy thing you can do. This involves using the ^^ ‘command’. If you type a command and run it, you can re-run the same command but substitute a piece of text for another piece of text using ^^ e.g.:
 
