@@ -61,12 +61,13 @@ drwxr-xr-x+ 4 Administrator None    0 Jul 21 23:39 .gem
 -rwxr-xr-x  1 Administrator None 1461 Jul 21 23:34 .inputrc```
 ```$ ^-al^-lash```
 ```ls -lash```
-```total 12K
+   ```total 12K
    0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:38 .
    0 drwxrwxrwx+ 3 Administrator None    0 Jul 21 23:34 ..
-4.0K -rwxr-xr-x  1 Administrator None 1.2K Jul 21 23:34 .bash_profile
-4.0K -rwxr-xr-x  1 Administrator None 3.1K Jul 21 23:34 .bashrc
+   4.0K -rwxr-xr-x  1 Administrator None 1.2K Jul 21 23:34 .bash_profile
+   4.0K -rwxr-xr-x  1 Administrator None 3.1K Jul 21 23:34 .bashrc
    0 drwxr-xr-x+ 4 Administrator None    0 Jul 21 23:39 .gem
-4.0K -rwxr-xr-x  1 Administrator None 1.5K Jul 21 23:34 .inputrc```
+   4.0K -rwxr-xr-x  1 Administrator None 1.5K Jul 21 23:34 .inputrc```
+
 
 Here, the command was the ^-al^-lash which replaced the –al with –lash in our previous ls command and re-ran the command again.
